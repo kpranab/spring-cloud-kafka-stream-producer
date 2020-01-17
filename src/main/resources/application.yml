@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: kafka:9092
+      bindings:
+        ACCOUNT:
+          destination: ACCOUNT
+          contentType: application/json
+        CREDIT_HISTORY:
+          destination: CREDIT_HISTORY
+          contentType: application/json
